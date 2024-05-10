@@ -1,0 +1,61 @@
+:root {
+    --main-color: black;
+  }
+
+.rangeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    gap: 10px;
+}
+
+.range {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.values {
+    display:flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.bar {
+    width: 400px;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+.thumb {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+    top: -3px;
+}
+
+.thumb:hover {
+    transform: scale(1.2);
+}
+
+.min-value{
+    bottom: 100%;
+    width: 40px;
+    height: 20px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.max-value {
+    bottom: 100%;
+    width: 40px;
+    height: 20px;
+    font-size: 12px;
+    text-align: right;
+}
